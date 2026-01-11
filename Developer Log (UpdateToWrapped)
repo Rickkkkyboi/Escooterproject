@@ -1,6 +1,8 @@
 Project Weee
 
-Project Description: This project is to carry these 3 purposes. 1: As a learning opportunity to figure out the in’s and out’s of electronic engineering as a self learner, 2: To achieve a daily drivable Electric Scooter capable of daily transportation on semi-heavy load. 3: To act as a “selling point” or cool detail for college applications for when that time occurs. By achieving all 3 of these goals I as a person should be of a higher regard generally and this trend should trend upward as time progresses.
+Project Description: This project is to carry these 3 purposes. 1: As a learning opportunity to figure out the in’s and out’s of electronic engineering as a self learner,
+2: To achieve a daily drivable Electric Scooter capable of daily transportation on semi-heavy load. 3: To act as a “selling point” or cool detail for college applications for when that time occurs.
+By achieving all 3 of these goals I as a person should be of a higher regard generally and this trend should trend upward as time progresses.
 
 Goals To Achieve in this project Right Now
 —————————————————————————————————————————————————
@@ -14,7 +16,8 @@ Bill Of Materials:
 
 Day 01: The Beginning (Project conception & Early Development / Basic Troubleshooting.)
 —————————————————————————————————————————————————
-Today after realizing that I had entirely exhausted what my robotics starter kit could be used for as a “toy” or demo. I decided to look for a long term project to make use of it in a fundamentally good and rich learning opportunity. After realizing that I should build an Electric Scooter based on the following criteria
+Today after realizing that I had entirely exhausted what my robotics starter kit could be used for as a “toy” or demo. I decided to look for a long term project to make use of it in a fundamentally good and rich learning opportunity.
+After realizing that I should build an Electric Scooter based on the following criteria
 
 * I have a regular Razor Kick-scooter
 * By my high school years I will be self-transporting myself to the campus (Less than 1 mile)
@@ -25,11 +28,18 @@ Today after realizing that I had entirely exhausted what my robotics starter kit
     * Security (Locking down movement, via keycard*RFID*)
     * General learning opportunity on Electronic Engineering as well as a good practice for software engineering.
 
-Today I’ve also determined in this that I will need and want many high-end electric scooter features. These include but are limited and or not limited to RFID (User authentication, theft protection), OLED display for Speed, Slope, Weather, Battery Metrics, Speed metrics (Via Gyroscope, Accelerometer, Inclinometer)
+Today I’ve also determined in this that I will need and want many high-end electric scooter features. These include but are limited and or not limited to RFID (User authentication,
+theft protection), OLED display for Speed, Slope, Weather, Battery Metrics, Speed metrics (Via Gyroscope, Accelerometer, Inclinometer)
 
 I will continue to work on this project and I’ve sent an expected Finish date of September, 27, 2027 As a self-reminder this date Is and will change over time either earlier or more likely later than this rough estimation.
 
 
 Day 02: Basic Setup (Project basics, getting LCD’s And GY-87 sensor working)
 —————————————————————————————————————————————————
-Today I made some slow progress in actual build but I made up for it by exercising my problem solving skills by making a tradeoff. After learning that my Sunfounder Elite Explorer Kit came with 2 broken modules. 1: RFID module, 2: 64x32 i2C OLED Module. I decided to make the following tradeoffs. For the RFID module I decided that instead of a physical pre-registered key I will trade it off for a more ambitious solution whereas a custom made app will send a command to unlock when the phone connects to the custom WiFi network that the Arduino uno R4 wifi will temporarily create, I will also integrate this WiFi feature to act as a screen by using a WiFi Captive portal to act as the dashboard. When or if the captive is closed then it will re-open the portal and ask if you want to close it for the rest of the ride. Letting you use the Primary integrated Liquidcrystal LCD display that will show primary metrics but not all metrics as reserved for the captive portal. I chose a captive portal rather than a dedicated app due to the fact that I have an iPhone and that Custom-loaded iOS apps have to be (Appealed) every 30 maybe 60 days *I do not remember off hand.* As well as that having a captive portal should under normal circumstances allow any WiFi compatible device to use the dashboard without worry of re-coding or re-compiling the app for a different platform (Android, Linux, Windows, MacOS) However at a later date if I decide I may replace all of these solutions by using an old android phone with a custom launcher app as the dashboard. This will allow more integration with the scooter and potentially cause less communication issues.
+Today I made some slow progress in actual build but I made up for it by exercising my problem solving skills by making a tradeoff. After learning that my Sunfounder Elite Explorer Kit came with 2 broken modules.
+1: RFID module, 2: 64x32 i2C OLED Module. I decided to make the following tradeoffs. For the RFID module I decided that instead of a physical pre-registered key I will trade it off for a more
+ambitious solution whereas a custom made app will send a command to unlock when the phone connects to the custom WiFi network that the Arduino uno R4 wifi will temporarily create, I will also integrate this WiFi feature to act as a screen by using a WiFi Captive portal to act as the dashboard.
+When or if the captive is closed then it will re-open the portal and ask if you want to close it for the rest of the ride. Letting you use the Primary integrated Liquidcrystal LCD display that will show primary metrics but not all metrics as reserved for the captive portal.
+I chose a captive portal rather than a dedicated app due to the fact that I have an iPhone and that Custom-loaded iOS apps have to be (Appealed) every 30 maybe 60 days *I do not remember off hand.* As well as that having a captive portal should under normal circumstances allow any WiFi compatible device to use the dashboard without worry of re-coding or re-compiling the app for a different platform
+(Android, Linux, Windows, MacOS) However at a later date if I decide I may replace all of these solutions by using an old android phone with a custom launcher app as the dashboard. 
+This will allow more integration with the scooter and potentially cause less communication issues.
